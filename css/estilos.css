@@ -1,9 +1,54 @@
 header{
   background-color:  #5b7989;
   border-radius: 10px;
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+
 }
 header h1{
   color:white;
   text-align: left;
   text-shadow: 2px 2px #02010a;
+  display: inline;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+@media screen and (max-width: 600px){
+  ul li {
+      float: left;
+      text-align: center;
+      display:flex;
+    }
+    header h1{
+      text-align: center;
+      display: flex;
+
+    }
 }
