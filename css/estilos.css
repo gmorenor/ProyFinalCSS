@@ -73,6 +73,32 @@ header h1{
 	padding: 10px;
 }
 
+#img2:hover {
+	transform: rotate(10deg);
+	box-shadow: 2px 2px #82c3a6;
+}
+
+#img3:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px #82c3a6;
+}
+
+footer{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #C6d5c5;
+}
+
+.columna{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacto{
+	flex: 25%;
+	padding: 20px;
+}
+
 @media screen and (max-width: 900px){
 header h1{
       margin:auto;
