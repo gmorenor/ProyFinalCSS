@@ -1,7 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
 	width: 90%;
 	margin-left: 5%;
   background-color: #02010a;
+  font-family: Dancing Script;
 }
 
 header{
@@ -83,21 +88,30 @@ header h1{
 	box-shadow: 2px 2px #82c3a6;
 }
 
-footer{
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	background-color: #C6d5c5;
+.contfooter {
+    display:flex;
+    justify-content: space-around;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #C6d5c5;
 }
 
-.columna{
-    display: flex;
-    flex-wrap: wrap;
+.contacto {
+  padding: 20px;
 }
 
-.contacto{
-	flex: 25%;
+.termino {
+	 padding: 20px;
+}
+
+.RedesSociales {
 	padding: 20px;
 }
+
+.derechos {
+	 padding: 20px;
+}
+
 
 @media screen and (max-width: 900px){
 header h1{
@@ -131,5 +145,7 @@ header h1{
 	width: 50%;
  	top: 50px;
 }
-
+.contfooter {
+    flex-direction: column;
+  }
 }
